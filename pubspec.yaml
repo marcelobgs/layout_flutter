@@ -60,6 +60,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/images/usuario.jpg
+     - assets/images/usuario.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -73,6 +74,19 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: GFSDidot
+      fonts:
+        - asset: assets/fonts/GFSDidot-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+    - family: Oranienbaum
+      fonts:
+        - asset: assets/fonts/Oranienbaum-Regular.ttf
+    - family: Koulen
+      fonts:
+        - asset: assets/fonts/Koulen-Regular.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
