@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'myCard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,25 +43,13 @@ class MyApp extends StatelessWidget {
               indent: 100,
               endIndent: 100,
             ),
-            Card(
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-              child: ListTile(
-                title: Text(
-                  '+55 86 12345-6789',
-                  style: TextStyle(color: Colors.teal, fontSize: 18),
-                ),
-                leading: Icon(Icons.phone, color: Colors.teal),
-              ),
+            myCard(
+              nome: '+55 86 99408-0810',
+              icone: Icons.phone,
             ),
-            Card(
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-              child: ListTile(
-                title: Text(
-                  'marcelobsegundo@aluno.uespi.br',
-                  style: TextStyle(color: Colors.teal, fontSize: 18),
-                ),
-                leading: Icon(Icons.mail, color: Colors.teal),
-              ),
+            myCard(
+              nome: 'marcelobsegundo@aluno.uespi.br',
+              icone: Icons.mail,
             )
           ],
         ),
