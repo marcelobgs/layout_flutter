@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,24 +22,46 @@ class MyApp extends StatelessWidget {
             Container(
               margin: EdgeInsets.zero,
               child: CircleAvatar(
-                backgroundImage: AssetImage('./assets/images/usuario.png'),
+                backgroundImage: AssetImage('./assets/images/usuario.jpeg'),
                 backgroundColor: Colors.white,
                 radius: 100,
               ),
             ),
             Text(
-              'Greek Freak',
-              style: TextStyle(fontSize: 30, fontFamily: 'Koulen'),
-            ),
-            Text(
-              'Giannis Sina Ugo Antetokounmpo',
+              'Marcelo Barros Galvão II',
               style: TextStyle(
                   color: Colors.white, fontSize: 25, fontFamily: 'Oranienbaum'),
             ),
             Text(
-              'Γιάννης Σίνα Ούγκο Αντετοκούνμπο',
-              style: TextStyle(fontSize: 20, fontFamily: 'GFSDidot'),
+              'Flutter Developer',
+              style: TextStyle(
+                  color: Colors.white, fontSize: 20, fontFamily: 'Roboto'),
             ),
+            Divider(
+              color: Colors.white,
+              indent: 100,
+              endIndent: 100,
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: ListTile(
+                title: Text(
+                  '+55 86 12345-6789',
+                  style: TextStyle(color: Colors.teal, fontSize: 18),
+                ),
+                leading: Icon(Icons.phone, color: Colors.teal),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: ListTile(
+                title: Text(
+                  'marcelobsegundo@aluno.uespi.br',
+                  style: TextStyle(color: Colors.teal, fontSize: 18),
+                ),
+                leading: Icon(Icons.mail, color: Colors.teal),
+              ),
+            )
           ],
         ),
       ),
